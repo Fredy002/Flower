@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d6f5d6; /* Fondo ligeramente verde */
+}
+
+.flower-container {
+    position: relative;
+}
+
+.flower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: brown;
+    position: relative;
+    animation: breeze 4s infinite alternate ease-in-out;
+    z-index: 2; 
+}
+
+.stem {
+    width: 10px;
+    height: 200px;
+    background-color: green;
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leaf {
+    width: 50px;
+    height: 25px;
+    background-color: green;
+    position: absolute;
+    bottom: -100px;
+    border-radius: 50px 0 50px 0;
+    box-shadow: 2px 2px 5px #cccccc;
+}
+
+.leaf.left {
+    transform: rotate(45deg);
+    left: -10px;
+}
+
+.leaf.right {
+    transform: rotate(-35deg);
+    right: -10px;
+}
+
+@keyframes breeze {
+    0% {
+        transform: rotate(-10deg) translateX(-5px);
+    }
+    25% {
+        transform: rotate(0deg) translateX(0px);
+    }
+    50% {
+        transform: rotate(10deg) translateX(5px);
+    }
+    75% {
+        transform: rotate(0deg) translateX(0px);
+    }
+    100% {
+        transform: rotate(-10deg) translateX(-5px);
+    }
+}
+
+.petal {
+    position: absolute;
+    width: 65px;
+    height: 35px;
+    background-color: yellow;
+    border-radius: 100%;
+    top: 100;
+    left: 100;
+    margin: -15px 0 0 -30px;
+    box-shadow: 2px 2px 5px #cccccc;
+}
+
+/* Rotaciones para los pétalos */
+.petal:nth-child(1) {
+    transform: rotate(0deg) translateY(-75px);
+}
+
+.petal:nth-child(2) {
+    transform: rotate(22.5deg) translateY(-75px);
+}
+
+.petal:nth-child(3) {
+    transform: rotate(45deg) translateY(-75px);
+}
+
+.petal:nth-child(4) {
+    transform: rotate(67.5deg) translateY(-75px);
+}
+
+.petal:nth-child(5) {
+    transform: rotate(90deg) translateY(-75px);
+}
+
+.petal:nth-child(6) {
+    transform: rotate(112.5deg) translateY(-75px);
+}
+
+.petal:nth-child(7) {
+    transform: rotate(135deg) translateY(-75px);
+}
+
+.petal:nth-child(8) {
+    transform: rotate(157.5deg) translateY(-75px);
+}
+
+.petal:nth-child(9) {
+    transform: rotate(180deg) translateY(-75px);
+}
+
+.petal:nth-child(10) {
+    transform: rotate(-22.5deg) translateY(-75px);
+}
+
+.petal:nth-child(11) {
+    transform: rotate(-45deg) translateY(-75px);
+}
+
+.petal:nth-child(12) {
+    transform: rotate(-67.5deg) translateY(-75px);
+}
+
+.petal:nth-child(13) {
+    transform: rotate(-90deg) translateY(-75px);
+}
+
+.petal:nth-child(14) {
+    transform: rotate(-112.5deg) translateY(-75px);
+}
+
+.petal:nth-child(15) {
+    transform: rotate(-135deg) translateY(-75px);
+}
+
+.petal:nth-child(16) {
+    transform: rotate(-157.5deg) translateY(-75px);
+}
